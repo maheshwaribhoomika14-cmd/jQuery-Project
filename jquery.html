@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- <button>Hide Text</button>
+    <b>Hello World</b>
+
+
+    <script>
+        $(document).ready(function(){
+$("button").click(function(){
+    $("b").hide();
+});
+        });
+    </script> -->
+
+
+<!-- <h6>This keyword</h6>
+
+    <script>
+        $(document).ready(function(){
+$(this).click(function(){
+    $("h6").hide();
+});
+        });
+    </script> -->
+
+<br>
+<button type="button" class="my-btn1">Select class</button>
+
+<p class="my-text1">Hello world</p>
+    <script>
+        $(document).ready(function(){
+$(".my-btn1").click(function(){
+    $(".my-text1").hide();
+});
+        });
+    </script>
+
+<br>
+<button type="button" id="my-btn1">Select class</button>
+
+<p id="my-text1">Hello world</p>
+    <script>
+        $(document).ready(function(){
+$("#my-btn1").click(function(){
+    $("#my-text1").hide();
+});
+        });
+    </script>
+
+    <br>
+<button type="button" class="my-btn2">Select all elements</button>
+
+    <script>
+        $(document).ready(function(){
+$(".my-btn2").click(function(){
+    $("*").hide();
+});
+        });
+    </script>
+
+
+
+<button type="button" class="my-btn3">Select class </button>
+
+<p>Hello World</p>
+<p class="intro">Hello World</p>
+<h1 class="intro">Hello World</h1>
+
+
+
+    <script>
+        $(document).ready(function(){
+$(".my-btn3").click(function(){
+    $("p.intro").hide();
+});
+        });
+    </script>
+
+
+<button type="button" class="my-btn4">Select class </button>
+
+<p>Hello World</p>
+<p class="intro1">Hello World</p>
+<h1 id="intro1">Hello World</h1>
+
+
+
+    <script>
+        $(document).ready(function(){
+$(".my-btn4").click(function(){
+    $("[id]").hide();
+});
+        });
+    </script>
+
+
+
+<button type="button" class="my-btn5">Select class </button>
+<br>
+<a href="#">Hello</a> <br>
+<a href="#" target="_blank">Hello</a> <br>
+<a href="#">Hello</a>
+
+
+
+
+    <script>
+        $(document).ready(function(){
+$(".my-btn5").click(function(){
+    $("a[target='_blank']").hide();
+});
+        });
+    </script>
+    <br><br>
+
+    <button type="button" class="my-btn6">Select class </button>
+<br>
+<a href="#">Hello</a> <br>
+<a href="#" target="_blank">Hello</a> <br>
+<a href="#">Hello</a>
+
+
+
+
+    <script>
+        $(document).ready(function(){
+$(".my-btn6").click(function(){
+    $("a[target!='_blank']").hide();
+});
+        });
+    </script>
+    
+
+
+
+<table border="" width="50%">
+    <tr>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+
+    </tr>
+        <tr>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+
+    </tr>    <tr>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+
+    </tr>    <tr>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+
+    </tr>    <tr>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+        <th>Hello</th>
+
+    </tr>
+</table>
+
+
+<script>
+        $(document).ready(function(){
+$("tr:even").css("background-color","lightblue");
+$("tr:odd").css("background-color","lightgreen");
+
+        });
+
+</script>
+
+<!-- today...... -->
+<h2>Event topic</h2>
+
+<script>
+    $(document).ready(function(){
+        $(".click-event").click(function(){
+            $(this).hide();
+        });
+    });
+</script>
+<p class="click-event">if you click on me i will disapper</p>
+<p>click me away!</p>
+<p>click me too!</p>
+
+
+<h2>dbclick</h2>
+
+<script>
+     $(document).ready(function(){
+        $(".dblclick-event").dblclick(function(){
+            $(this).hide();
+        });
+    });
+</script>
+
+<p class="dblclick-event">if you double-click on me</p>
+<p>click me away!</p>
+<p>click me too!</p>
+
+<!-- <h2>Mouseenter</h2>
+
+<script>
+    $(document).ready(function(){
+        $("#p35").mouseenter(function(){
+            alert("you enter p1!");
+        });
+    });
+</script>
+
+<p id="p35">enter this paragraph</p> -->
+
+
+<!-- <h2>mouseleave</h2>
+
+<script>
+    $(document).ready(function(){
+        $("#p45").mouseleave(function(){
+            alert("bye! you now leave p45!");
+        });
+    });
+</script>
+
+<p id="p45">this is paragraph</p> -->
+
+
+
+<h1>mousedown</h1>
+
+<script>
+    $(document).ready(function(){
+        $("#p60").mousedown(function(){
+            alert("mouse down over p60!");
+        });
+    });
+</script>
+
+<p id="p60">this is a para1</p>
+
+<h2>Mouseup</h2>
+<script>
+    $(document).ready(function(){
+        $("#p61").mouseup(function(){
+            alert("mouse up over p61!");
+        });
+    });
+</script>
+<p id ="p61"> this is prara</p>
+
+
+<!-- <h4>hover</h4>
+<script>
+    $(document).ready(function(){
+        $("#p62").hover(function(){
+            alert("you enerted p62!");
+        });
+    });
+</script>
+<p id ="p62">this is para</p> -->
+
+
+
+
+
+
+
+       <!--....... TODAY  TOPIC START ....... -->
+
+<h1>focus() & blur</h1>
+<style>
+    .blur{
+        filter:blur(5px); 
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $("input").focus(function(){
+            $(this).css("background-color","yellow");
+        });
+        $("input").blur(function(){
+            var inputValue=$(this).val();
+            $(this).hide();
+            $(this).after("<img src='your_image_url_here' alt=' '' + inputValue +  class='blur'>")
+        });
+    });
+</script>
+
+Name:<input type="text" name="fullname"><br>
+Email:<input type="text" name="email">
+
+<h2>the on()method</h2>
+
+<script>
+    $(document).ready(function(){
+        $("#p67").on("click",function(){
+            $(this).hide();
+        });
+    });
+</script>
+<p id="p67">the on method</p>
+<p>if you click on me . i will disapper</p>
+<p>click me away!</p>
+<p>click me too!</p>
+
+
+ 
+ <script>
+    $(document).ready(function(){
+        $("#p70").on({
+            mouseenter:function(){
+                $(this).css("background-color","lightgray");
+            },
+            mouseleave:function(){
+                $(this).css("background-color","lightblue");
+            },
+            click:function(){
+                $(this).css("background-color","yellow");
+            },
+
+        });
+    });
+ </script>
+ <p id="p70">click or move the mouse pointer over this paragraph</p>
+
+<h2>jquery hide() and show()</h2>
+<!-- $(selector).hide(speed,callback);
+$(selector).show(speed,callback); -->
+<script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("#hideshow1").hide("slow",function(){
+                // alert("element hidden!");
+            });
+        });
+
+                $("#show").click(function(){
+            $("#hideshow1").show("slow",function(){
+                // alert("element show!");
+            });
+        });
+
+    });
+</script>
+
+<p id="hideshow1"> if you click on the "hide" button, i will disapper</p>
+<button id ="hide">Hide</button>
+<button id ="show">show</button>
+
+
+<h2>Jquery toggle</h2>
+
+<script>
+    $(document).ready(function(){
+        $("#hideshowbtn").click(function(){
+            $("#hideshow2").toggle("slow",function(){
+                // change text of the toggled element
+                $(this).text("Toggled!");
+
+                //modify styles of the toggled element
+                $(this).css("background-color","yellow");
+            });
+        });
+    });
+</script>
+
+<button id="hideshowbtn">Toogle btw hiding and showing the paragraph</button>
+<p id="hideshow2">this is a paragraph with little content.</p>
+<p>this is another small paragraph</p>
+
+
+<!-- <h1>Topic - JQuery Effect-Fading</h1> -->
+
+<h2>fadeln()Method</h2>
+$(selector).fadeln(speed,callback);
+
+<script>
+    $(document).ready(function(){
+        $("#fadeinbtn").click(function(){
+            $("#div1").fadeIn();
+            $("#div2").fadeIn("slow");
+            $("#div3").fadeIn(5000);
+        });
+    });
+</script>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate.</p>
+
+    <button id="fadeinbtn">Click to fade in boxes </button><br><br>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+
+
+
+    <h2>fadeout()Method</h2>
+$(selector).fadeln(speed,callback);
+
+<script>
+    $(document).ready(function(){
+        $("#fadeout").click(function(){
+            $("#div11").fadeOut();
+            $("#div21").fadeOut("slow");
+            $("#div31").fadeOut(5000);
+        });
+    });
+</script>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate.</p>
+
+    <button id="fadeout">Click to fade out boxes </button><br><br>
+    <div id="div11" style="width:80px;height:80px;background-color:red;"></div><br>
+    <div id="div21" style="width:80px;height:80px;background-color:green;"></div><br>
+    <div id="div31" style="width:80px;height:80px;background-color:blue;"></div><br>
+
+
+<h2>fadetoggle()Method</h2>
+$(selector).fadeln(speed,callback);
+
+<script>
+    $(document).ready(function(){
+        $("#fadetoggle").click(function(){
+            $("#div111").fadeToggle();
+            $("#div222").fadeToggle("slow");
+            $("#div333").fadeToggle(5000);
+        });
+    });
+</script>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate.</p>
+
+    <button id="fadetoggle">Click to fade in/out boxes </button><br><br>
+    <div id="div111" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="div222" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+    <div id="div333" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+
+
+
+    <h2>fadeto()Method</h2>
+$(selector).fadeln(speed,callback);
+
+<script>
+    $(document).ready(function(){
+        $("#fadeto1").click(function(){
+            $("#div_112").fadeTo("slow",0.15);
+            $("#div_22").fadeTo("slow",0.4);
+            $("#div_33").fadeTo("slow",0.7);
+        });
+    });
+</script>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate.</p>
+
+    <button id="fadeto1">Click to fade  boxes </button><br><br>
+    <div id="div_112" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="div_22" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+    <div id="div_33" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+
+
+    <h1>Effect -Sliding</h1>
+    <h3>SlideDown()Method</h3>
+    $(selector).slideDown(speed,callback);
+        <style>
+        #panel,#flip{
+       padding: 5px;
+       text-align: center;
+       background-color: #e5eecc;
+       border: solid 1px #c3c3c3;
+        }
+
+        #panel{
+          padding: 50px;
+          display: none;
+        }
+    </style>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+    <div id="flip">click to slide down panel</div>
+    <div id="panel">Hello World!</div>
+
+
+
+     <h1>Effect -Sliding</h1>
+    <h3>SlideUp()Method</h3>
+    $(selector).slideDown(speed,callback);
+        <style>
+        #panel2,#flip2{
+       padding: 5px;
+       text-align: center;
+       background-color: #e5eecc;
+       border: solid 1px #c3c3c3;
+        }
+
+        #panel2{
+          padding: 50px;
+        }
+    </style>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#flip2").click(function(){
+                $("#panel2").slideUp("slow");
+            });
+        });
+    </script>
+    <div id="flip2">click to slide up panel</div>
+    <div id="panel2">Hello World!</div>
+
+ <h1>slide toggle()method</h1>
+ <style>
+    #panel30, #flip45{
+        padding: 5px;
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+
+    #panel30{
+        padding: 50px;
+        display: none;
+    }
+ </style>
+ <script>
+    $(document).ready(function(){
+        $("#flip45").click(function(){
+            $("#panel30").slideToggle("slow");
+        });
+    });
+ </script>
+
+ <div id="flip45">click to slide the panel down or up </div>
+ <div id="panel30">hello world</div>
+
+ <!-- <h1>JQuery Animation - the animate() Method</h1>
+ <script>
+    $(document).ready(function(){
+        $("#myanimationbtn").click(function(){
+            $("#myanimation").animate({
+                left:`250px`,
+                top:`250px`,
+                opacity:`0.5`,
+                height:`150px`,
+                width:`150px`,
+            });
+        });
+    });
+ </script>
+ <body>
+    <button id="myanimationbtn">Start Animation</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quos?</p>
+
+<div class="#" style="border: 1px solid red; position: relative;">
+    <div id="myanimation" style="background-color: #98bf21;height: 100px;width: 100px;position: absolute;"></div>
+
+</div> 
+
+   <script>
+        $(document).ready(function(){
+            $("#myanibtn").click(function(){
+                var div=$("#myani");
+                div.animate({height:`300px`,opacity:`0.4`},"slow");
+                div.animate({width:`300px`,opacity:`0.8`},"slow");
+                div.animate({height:`100px`,opacity:`0.4`},"slow");
+                div.animate({width:`100px`,opacity:`0.8`},"slow");
+
+            });
+        });
+    </script> 
+    <button id="myanibtn">Start Animation</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, tempore quo deserunt possimus quae!</p>
+<div class="#" style="position: relative;">
+    <div id="myani" style="background-color: #98bf21;height: 100px;width: 100px;position: absolute;"></div>
+</div>
+ -->
+    <!-- <script>
+        $(document).ready(function(){
+            $("#myanibtn2").click(function(){
+                var div2=$("#myani2");
+                div2.animate({left:`100px`},"slow");
+                div2.animate({fontize:`3em`,},"slow");
+
+            });
+        });
+    </script>
+    <button id="myanibtn2">Start Animation</button>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam atque, tempore quo deserunt possimus quae!</p>
+
+<div class="#" style="position: relative;">
+    <div id="myani2" style="background-color: #98bf21;height: 100px;width: 100px;position: absolute;">HELLO</div>
+
+</div> -->
+    <!-- <h2>Stop Animation()</h2>
+    $(selector).stop(stopAll,gotoEnd);
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function(){
+                $("#panel").stop();
+            });
+        });
+    </script>
+    <style>
+        #panel, #flip{
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #555;
+            color: white;
+            border: solid 1px #666;
+            border-radius: 3px;
+        }
+
+        #panel{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+
+    <button id="stop">Stop sliding</button>
+
+    <div id="flip0">Click to slide down panel</div>
+    <div id="panel01">Hello World!</div>
+
+    <h1>Jquery method Chaining</h1>
+    <script>
+        $(document).ready(function(){
+            $("button101").click(function(){
+                $("#p100").css("color","red").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+<p id="p100">Query is fun!!</p>
+<button>Click Me</button>
+
+<h1>JQuery-Get Connect and Attribute</h1>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            alert("Text:" + $("#test").text());
+        });
+                $("#btn2").click(function(){
+            alert("HTML:" + $("#test").html());
+        });
+
+    });
+</script>
+<p id="test">this is some<b>bold</b>text in a pargraph</p>
+<button id="btn37">show text</button>
+<button id="btn39">Show HTML</button> -->
+
+
+<br><br>
+<h1>jquery Animations- the animate ()method</h1>
+
+<button id="button104">Start Animation</button>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptas aliquam, molestias eligendi soluta officiis?</p>
+<div class="#" style="position: relative; height: 400px ; width: 100%; border: 2px solid red;">
+<div id="div104" style="background:#98bf21;height: 100px;width: 100px;position: absolute;"></div>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#button104").click(function(){
+            $("#div104").animate({
+                left:'250px',
+                top:'250px',
+                opacity:'0.5',
+                height:'150px',
+                width:'150px'   
+            });
+        });
+    });
+</script>
+<br><br>
+<br><br>
+
+
+<h1>Animation 2</h1>
+
+<button id="button_abc">Strat Animation 2</button>
+<div class="#" style="position: relative; height: 300px ; width: 100%; border: 2px solid red;">
+<div id="div_abc" style="background:#98bf21;height: 100px;width: 100px;position: absolute;"></div>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#button_abc").click(function(){
+            var div=$("#div_abc");
+            div.animate({height:'300px',opacity:'0.4'},"slow");
+            div.animate({width:'300px',opacity:'0.8'},"slow");
+            div.animate({height:'100px',opacity:'0.4'},"slow");
+            div.animate({width:'100px',opacity:'0.8'},"slow");
+
+        });
+    });
+</script>
+
+<h1>Animation 3</h1>
+
+<button type="button" id="animation3_btn">Start Animation</button>
+
+<div class="#" style="position: relative; height: 300px ; width: 100%; border: 2px solid red;">
+<div id="animation3" style="background:#98bf21;height: 200px;width: 200px;position: absolute;">Hello</div>
+
+</div>
+
+<script>
+        $(document).ready(function(){
+        $("#animation3_btn").click(function(){
+            var div1 = $("#animation3");
+            div1.animate({left:'100px'}, "slow");
+            div1.animate({fontSize:'50px'}, "slow");
+
+        });
+    });
+</script>
+
+
+<h2>JQuery Method Chaining</h2>
+
+<script>
+    $(document).ready(function(){
+        $("#flip123").click(function(){
+            $("#panel123").slideDown(5000);
+        });
+           $("#stop123").click(function(){
+            $("#panel123").stop();
+        });
+    });
+</script>
+
+<style>
+    #panel123, #flip123{
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #555;
+        color: white;
+        border: 1px solid #6666;
+        border-radius: 3px;
+    }
+    #panel123 {
+        padding: 50px;
+        display: none;
+    }
+
+</style>
+
+<button id="stop123">Stop Slide</button>
+
+<div id="flip123">
+    Click to slide down panel
+</div>
+
+<div id="panel123">
+    Hello World
+</div>
+<!-- <button id="#chain_btn">Click Me</button>
+<div id="chain">Jquery is Fun !</div>
+
+
+<script>
+    $(document).ready(function(){
+        $("#chain_btn").click(function(){
+            $("#chain").css("color","red").slideUp(2000).slideDown(2000);
+        });
+    });
+</script> -->
+
+
+<script>
+    $(document).ready(function(){
+        $("#text_btn").click(function(){
+            alert("Text: " + $("#test").text());
+        });
+                $("#text_btn2").click(function(){
+            alert("HTML: " + $("#test").html());
+        });
+
+    })
+</script>
+
+<p id="test">this is some<b>bold</b>text in a paragraph</p>
+<button id="text_btn">Show Text</button>
+<button id="text_btn2">Show Html</button>
+
+
+<h2>show value</h2>
+
+<script>
+        $(document).ready(function(){
+        $("#Show_value").click(function(){
+            alert("Value: " + $("#text").val());
+        });
+    });
+
+</script>
+<p>Name:<input type="text" id="text" value=""></p>
+<button id="Show_value">Show Value</button>
+
+<h1>Get Attribute-attr</h1>
+
+<script>
+        $(document).ready(function(){
+        $("#Show_attr_value").click(function(){
+            alert($("#w3s").attr("href")); 
+        });
+    });
+
+</script>
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+<button id="Show_attr_value">Show href value</button>
+
+<h1>Jquery -set Content and Attribute</h1>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1111").click(function(){
+            $("#text1111").text("Hello World!");
+        });
+                $("#btn1122").click(function(){
+            $("#text1122").html("<i><b>Hello World!</b></i>");
+        });
+                $("#btn1133").click(function(){
+            $("#text1133").val("Dolly Duck");
+        });
+
+
+    });
+</script>
+
+
+<h1>NEW START</h1>
+<p id="text1111">this is paragraph</p>
+<p id="text1122">this is another paragraph</p>
+
+<p>input field: <input type="text" id="text1133" value="Mickey Mouse"></p>
+
+<button id="btn1111">Set Text</button>
+<button id="btn1122">Set HTML </button>
+<button id="btn1133">Set Value </button>
+
+
+<h1>A Callback Function for text() , html(), and val()</h1>
+
+<script>
+    $(document).ready(function(){
+        $("#btn50").click(function(){
+            $("#text12").text(function(i,origText){
+                return "old text:" + origText + "New text: Hello world!(index:" + i +")";
+            });
+        });
+         $("#btn511").click(function(){
+            $("#text13333").html(function(i,origText){
+                return "old text:" + origText + "New text: <b>Hello world!</b>(index:" + i +")";
+            });
+        });
+        });
+</script>
+
+<p id="text12">this is a <b> bold</b>paragraph</p>
+<p id="text13333">this is another <b> bold</b>paragraph</p>
+
+<button id="btn50">show old/New Text</button>
+<button id="btn511">show old/New HTML</button>
+
+
+<h2>ADD NEW HTML CONTENT</h2>
+<h1>1. Append ()Method</h1>
+<script>
+    $(document).ready(function(){
+        $("#btn_76").click(function(){
+            $(".app").append("<b>Appended text</b>.");
+        });
+                $("#btn_77").click(function(){
+            $(".app2").append("<li>Appended item</li>");
+        });
+
+    });
+</script>
+<p class="app">this is a pargraph</p>
+<p class="app">thisis a another paragraph</p>
+<ol class="app2">
+    <li>list item1</li>
+        <li>list item2</li>
+    <li>list item3</li>
+
+</ol>
+<button id="btn_76">Appened Text</button>
+<button id="btn_77">Appended list items</button>
+
+<h1>1. Prepend ()Method</h1>
+<script>
+    $(document).ready(function(){
+        $("#btn_78").click(function(){
+            $(".pre").prepend("<b>Prepend text</b>.");
+        });
+                $("#btn_79").click(function(){
+            $(".pre2").prepend("<li>Prepend item</li>");
+        });
+
+    });
+</script>
+<p class="pre">this is a pargraph</p>
+<p class="pre">thisis a another paragraph</p>
+<ol class="pre2">
+    <li>list item1</li>
+        <li>list item2</li>
+    <li>list item3</li>
+
+</ol>
+<button id="btn_78">Prepend Text</button>
+<button id="btn_79">Prepend list items</button>
+
+
+<h1>Add Several New Elements with appened() and Prepend()</h1>
+
+<script>
+    function appendText(){
+        var txt1="<p>Text.</p>";      //create text with html
+        var txt2=$("<p></p>").text("Text.");    //create text with jquery
+        var txt3=document.createElement("p");
+        txt3.innerHTML="Text.";   //create text with DOM
+        $("body").appened(txt1,txt2,txt3);  //appened new element
+    }
+</script>
+
+<p > this is a pargraph</p>
+<button onclick="appendText()">Append Text</button>
+
+
+<h1>After() and Before() Methods</h1>
+<script>
+    $(document).ready(function(){
+        $("#btn-32").click(function(){
+            $("img").before("<b>Before</b>");
+        });
+                $("#btn-33").click(function(){
+            $("img").after("<i>After</i>");
+        });
+
+    });
+</script>
+
+    
+    <img src ="https://www.w3schools.com/html/img_girl.jpg" alt="jQuery" width="100" height="140"><br><br>
+
+    <button id="btn-32">insert before </button>
+        <button id="btn-33">insert after </button>
+
+
+<h2>remove element</h2>
+<script>
+    $(document).ready(function(){
+        $("#myremove1").click(function(){
+            $("#removediv1").remove();
+
+        });
+    });
+    </script>
+    <button type="button" id="myremove1">Remove1</button>
+    <div id="removediv1" style="height:100px;width: 300px;border: 1px solid black;background-color: green;">
+        this is some text in the div.
+        <p>this is a the div</p>
+        <p>this is another in the div</p> 
+    </div>
+    <br>
+    <br>
+
+    <br>
+    <button>remove the div element</button>
+
+    <h2>jquery empty() method</h2>
+    <script>
+        $(document).ready(function(){
+            $("#emptybtn").click(function(){
+                $("#empty1").empty();
+            });
+        });
+
+    </script>
+            <div id="empty1" style="height:100px;width:300px;border:1px solid black; background-color:yellow;">
+          this is some text in the div
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo!</p>
+          </div>
+          <br>
+          <button id="emptybtn">empty the div element</button>
+
+          <h2>Filter the Element to be Removed</h2>
+          <script>
+            $(document).ready(function(){
+                $("#remvebtn3").click(function(){
+                    $("p").remove(".test, .demo");
+                });
+            });
+          </script>
+          <style>
+            .test{
+                color: red;
+                font-size: 20px;
+            }
+
+            .demo{
+                color: green;
+                font-size: 25px;
+            }
+          </style>
+          <p>this is a paragraph</p>
+          <p class="test"> this is a element with class="test"</p>
+          <p class="test1">this is a element with class="test</p>
+          <p class="demo">this is a element with class="demo</p>
+
+          <button id="remvebtn3">remove all p element with class="test" and class="demo"</button>
+
+          <h2>GET AND SET CSS CLASSES</h2>
+          <p>1.addClass()Method</p>
+          <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("h1,h2").addClass("blue");
+                    $("i").addClass("important");
+                });
+            });
+          </script>
+          <style>
+            .important{
+                font-weight: bold;
+                font-size: xx-large;
+            }
+
+            .blue{
+                color: blue;
+            }
+          </style>
+          <h1>Heading1</h1>
+          <h2>Heading2</h2>
+
+          <i>Lorem ipsum dolor sit amet.</i>
+
+          <div>this is some imporant text!</div><br>
+
+          <button>add class to element</button>
+
+          <style>
+            .important{
+                font-weight: bold;
+                font-size: xx-large;
+            }
+            .blue{
+                color: blue;
+            }
+          </style>
+
+          <div id="div1">thius is some text</div>
+          <div id="div2">this is some text</div>
+          <br>
+          <button>add class to first div element</button>
+
+          <h2>Remove class()Method</h2>
+          <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("h1,h2,p").removeClass("blue");
+                });
+            });
+          </script>
+          <h1 class="blue">heading1</h1>
+          <h2 class="blue">heaading2</h2>
+
+          <p class="blue">this is a pargraph</p>
+          <p>this is another paragraph</p>
+
+          <button>remove class from element</button>
+
+          <h2>CSS Method</h2>
+          <script>
+            $(document).ready(function(){
+                $("#css").click(function(){
+                    $(".myp11").css("background-color","yellow");
+                });
+            });
+          </script>
+          <h2>this is heading</h2>
+          <p style="background-color: #ff0000" class="myp11">this is para</p>
+                    <p style="background-color: #00ff00"  class="myp11">this is para</p>
+          <p style="background-color: #0000ff" class="myp11">this is para</p>
+
+          <p>this is paragraph</p>
+          <button id="css">set background-color of p</button>
+
+          <h2>Set Multiplay CSS Property</h2>
+          <script>
+            $(document).ready(function(){
+                $("#css2").click(function(){
+                    $(".myp111").css({"background-color":"yellow","font-size":"200%"});
+                });
+            });
+          </script>
+
+          <h2>this is paragraph</h2>
+          <p style="background-color: #ff0000" class="myp111">this is paragraph</p>
+                    <p style="background-color: #00ff00" class="myp111">this is paragraph</p>
+          <p style="background-color: #0000ff" class="myp111">this is paragraph</p>
+
+          <p>this is paragraph</p>
+<button id="css2">set Multiplay styles for p</button>
+
+
+
+<h2><b>Jquery Dimension Methods</b></h2>
+
+<!-- <h3> <i>width() and height() methods</i></h3> -->
+<script>
+    $(document).ready(function(){
+        $("#D_btn").click(function(){
+            var d_txt=" ";
+            d_txt += "width of div:" +$("#my_ddiv1").width()+"</br>";
+            d_txt += "height of div:" +$("#my_ddiv1").height();
+            $("#my_ddiv1").html(d_txt);
+
+        });
+    });
+</script>
+
+
+<div id="my_ddiv1" class="mydivh"></div>
+<button id="D_btn">Display dimesions of div</button>
+<p>width()-return the width of an element</p>
+<p>height()-retunr the height of an element</p>
+
+<h1>Inner Width() and Inner Heidht()Methods</h1>
+<style>
+    .mydivh{
+        height: 100px;
+        width: 300px;
+        padding: 10px;
+        margin: 3px;
+        border: 1px solid blue;
+        background-color: lightblue;
+    }
+</style>
+
+
+<script>
+    $(document).ready(function(){
+        $("#my_d_btn").click(function(){
+            var dd_txt=" ";
+            dd_txt+="width of div:"+$("#dd_div1").width()+"</br>";
+            dd_txt+="height of div:"+$("#dd_div1").height()+"</br>";
+            dd_txt+="inner width of div:"+$("#dd_div1").innerWidth()+"</br>";
+            dd_txt+="inner width of div:"+$("#dd_div1").innerHeight();
+            $("#dd_div1").html(dd_txt);
+
+        });
+    });
+</script>
+<div id="dd_div1" class="mydivh"></div>
+<button id="my_d_btn">display of div</button>
+<p>inner Width()-return the width of an element </p>
+<p>inner heigth()-return the heigth of an element </p>
+
+<h1>outerWidth() and outerHeight() Method</h1>
+<style>
+    #div1{
+        height: 100px;
+        width: 300px;
+        padding: 10px;
+        margin: 3px;
+        border: 1px solid blue;
+        background-color: lightblue;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $("display_div134").click(function(){
+            var txt="";
+            txt += "width of div:"+$("#div").width()+"</br>";
+            txt += "height of div:"+$("#div").height()+"</br>";
+            txt += "outer width of div:"+$("#div").outerWidth()+"</br>";
+            txt += "outer heigth of div:"+$("#div").outerHeight()+"</br>";
+
+
+        });
+    });
+</script>
+<div id="div"></div>
+<button id="display_div134">display dimension of div</button>
+<p>outerWidth()- return the width of an element </p>
+<p>outerHeight()- return the width of an element </p>
+
+<h2>what is traversing</h2>
+<h4>parent method()</h4>
+<!-- <style>
+    .ancestors *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $("span").parent().css({"color":"green","border":"2px solid red"});
+    });
+</script>
+<div class="ancestors">
+    <div style="width: 500px;">
+        <ul> ul(grandparent)
+            <li> li(direct parent)
+<span>span</span>
+            </li>
+        </ul>
+    </div>
+
+    <div style="width: 500px;"> div(grandparent)
+        <p> 
+            p(direct parent)
+            <span>span</span>
+        </p>
+    </div>
+</div>
+
+<h2>parents method</h2>
+<style>
+    .ancestors *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style> -->
+<!-- <script>
+    $(document).ready(function(){
+        $("li").parents().css({"color":"red","border":"2px solid red"});
+    });
+</script>
+<div class="ancestors">
+    <div style="width: 500px;"> div(great-grandparent)
+        <ul> ul(grandparent)
+            <li> li(direct parent)
+                <span>span</span>
+            </li>
+        </ul>
+    </div>
+
+    <div style="width: 500px;"> div(grandparent)
+        <p> p(direct [parent)
+            <span>span</span>
+        </p>
+    </div>
+</div> -->
+
+
+<!-- <p> Ex..2</p>
+<style>
+    .ancestors *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $("span").parents("div").css({"color":"red", "border":"2px solid red"});
+    });
+</script>
+<body class="ancestors"> body(great-great-grandparent)
+    <div style="width:500px;"> div (great-grandparent)
+        <ul> ul(grandparent)
+            <li> li(direct parent)
+                <span>span</span>
+            </li>
+        </ul>
+    </div>-->
+
+
+
+
+<!-- <h2>ParentUntil()Method</h2>
+<style>
+    .ancestors *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $("span").parentsUntil().css({"color":"red", "border":"2px solid red"});
+    });
+</script>
+    <div class="ancestors"> body(great-great-grandparent)
+        <div style="width:500px;"> div(great-grandparent)
+            <ul> ul(grandparent)
+                <li> li(direct parent)
+                    <span>span</span>
+                    </li>
+                    </ul>
+                    </div>
+                </div> -->
+
+
+
+
+<!-- <h2>jquery Traversing- Descendants</h2>
+<style>
+    .descendants *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $(".descendants").children().css({"color":"red", "border":"2px soild red"});
+    });
+</script>
+<div class="descendants" style="width:500px;"> div (current element)
+    <p> p(child)
+        <span>span(grandchild)</span>
+    </p>
+    <p> p(child)
+        <span> span(grandchild)</span>
+    </p>
+</div> -->
+
+
+
+
+<!-- <style>
+    .descendants{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $("div").children("p.first").css({"color":"red", "border":"2px soild red"});
+    });
+</script>
+<div class="descendants" style="width:500px;"> div (current element)
+    <p class="first"> p(child)
+        <span>span(grandchild)</span>
+    </p>
+    <p class="second"> p(child)
+        <span> span(grandchild)</span>
+    </p> 
+</div>
+-->
+
+
+<!-- <h2> find method()</h2>
+<style>
+    .descendants *{
+        display: block;
+        border:  2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script>
+        $(document).ready(function(){
+        $("div").find("span").css({"color":"red", "border":"2px soild red"});
+    });
+</script>
+<div class="descendants" style="width:500px;"> div (current element)
+    <p> p(child)
+        <span>span(grandchild)</span>
+    </p>
+    <p > p(child)
+        <span> span(grandchild)</span>
+    </p>
+</div> -->
+
+<!-- <style>
+    .descendants *{
+        display: block;
+        border:  2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script>
+        $(document).ready(function(){
+        $("div").find("*").css({"color":"red", "border":"2px soild red"});
+    });
+</script>
+<div class="descendants" style="width:500px;"> div (current element)
+    <p> p(child)
+        <span>span(grandchild)</span>
+    </p>
+    <p > p(child)
+        <span> span(grandchild)</span>
+    </p>
+</div> -->
+
+
+
+<!-- <h1>Traversing - Silblings</h1>
+<style>
+    .siblings *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script>
+        $(document).ready(function(){
+        $("h2").siblings().css({"color":"red", "border":"2px soild red"});
+    });
+</script>
+<div class="siblings">
+    <div> div(parent)
+        <p>p</p>
+        <span>span</span>
+        <h1>...</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+    </div>
+</div> -->
+
+
+
+<!-- <p>Ex.....2</p>
+<style>
+    .siblings *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+</style>
+<script>
+        $(document).ready(function(){
+        $("span").siblings("h2").css({"color":"red", "border":"2px soild red"});
+    });
+</script>
+<div class="siblings">
+    <div>div (parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+
+    </div>
+
+</div> -->
+
+<!-- 
+<h2>Next()Method</h2>
+<style>
+        .siblings *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+
+</style>
+<body>
+    <script>
+        $(document).ready(function(){
+        $("h2").next().css({"color":"red", "border":"2px soild red"});
+    });
+</script>
+<div class="siblings">
+    <div>div (parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+
+    </div>
+
+</div> -->
+
+
+<!-- <h2>Next All()Method</h2>
+<style>
+        .siblings *{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+
+</style>
+
+    <script>
+        $(document).ready(function(){
+        $("p").nextAll().css({"color":"red", "border":"2px soild red"});
+    });
+</script>
+<div class="siblings">
+    <div>div (parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+
+    </div>
+
+</div> -->
+
+<!-- 
+<h2>NextUntil()Method</h2>
+<style>
+            .siblings{
+        display: block;
+        border: 2px solid lightgray;
+        color: lightgray;
+        padding: 5px;
+        margin: 15px;
+    }
+
+</style>
+
+    <script>
+        $(document).ready(function(){
+        $("span").nextUntil("h6").css({"color":"red", "border":"2px soild red"});
+    });
+</script>
+<div class="siblings">
+    <div>div (parent)
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+
+        <p>p</p>
+
+    </div>
+
+</div> -->
+<!-- <h1>pre(), preall() & preuntil() method</h1>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("span").prev().css("color","red");
+        });
+    });
+</script>
+<button>chnge color</button>
+<p>this is a para</p>
+<span>this is a span</span>
+<span>this is another span</span> -->
+
+
+
+
+<!-- <h1>prevAll()Method</h1>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("span").prevAll().css("color","blue");
+        });
+    });
+</script>
+<button>Change Color</button>
+<p>this is para</p>
+<h1>Hello</h1>
+<span>this is span</span>
+<span>this is another span</span> -->
+
+
+
+<!-- <h1>prevUntil()Method</h1>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("span").prevUntil("p").css("color","green");
+        });
+    });
+</script>
+<button>change color</button>
+<p>this is para</p>
+<h1>this is span</h1>
+<h2>this is span</h2>
+<h3>this is span</h3>
+
+<span>this is another span</span> -->
+
+
+<!-- <h1>Jquery Traversting-Filtering</h1>
+
+<h2>first()Method</h2>
+<script>
+    $(document).ready(function(){
+        $("strike").first().css("background-color","yellow");
+    });
+</script>
+<h1>Welcome to my Homepage</h1>
+<p>this is paragraph</p>
+
+<strike>Hello</strike>
+<strike>Hello</strike>
+<strike>Hello</strike>
+<strike>Hello</strike>
+
+<div class="first" style="border: 1px solid black;">
+    <p>a is anoter div</p>
+    <p>another div</p>
+</div>
+<br>
+
+<div class="first" style="border: 1px solid black;">
+    <p>a is anoter div</p>
+    <p>another div</p>
+</div>
+<br>
+
+<div class="first" style="border: 1px solid black;">
+    <p>a is anoter div</p>
+    <p>another div</p>
+</div> -->
+
+
+<!-- 
+<h2>last () method</h2>
+<script>
+    $(document).ready(function(){
+        $(".last").last().css("background-color","yellow");
+    });
+</script>
+
+<h1>wellcome to my home page</h1>
+<p>this is paraa</p>
+
+<div class="last" style="border: 1px solid black;">
+<p>another para in a div</p>
+<p>another para in another div</p>
+</div>
+<br>
+
+<div class="last" style="border: 1px solid black;">
+<p>another para in a div</p>
+<p>another para in another div</p>
+</div>
+<br>
+
+<div class="last" style="border: 1px solid black;">
+<p>another para in a div</p>
+<p>another para in another div</p>
+</div> -->
+
+ 
+<h2>Eq () method</h2>
+<script>
+    $(document).ready(function(){
+        $(".eq").eq(1).css("background-color","yellow");
+    });
+</script>
+
+<h1>wellcome to my home page</h1>
+<p>this is paraa</p>
+
+<div class="eq" style="border: 1px solid black;">
+<p>another para in a div</p>
+<p>another para in another div</p>
+</div>
+<br>
+
+<div class="eq" style="border: 1px solid black;">
+<p>another para in a div</p>
+<p>another para in another div</p>
+</div>
+<br>
+
+<div class="eq" style="border: 1px solid black;">
+<p>another para in a div</p>
+<p>another para in another div</p>
+</div> 
+
+<!-- 
+
+<h1>Filter()Method</h1>
+<script>
+    $(document).ready(function(){
+        $("p").filter(".intro").css("background-color","yellow");
+    });
+</script>
+<h1 class="intro">Wellcome to My Homepage</h1>
+
+<p>my name is donald </p>
+<p class="intro">donald duck</p>
+<p class="intro">i live in duckburg</p>
+<p>my best friend is mickey</p>
+
+<h1>Not()Method</h1> -->
+
+<script>
+    $(document).ready(function(){
+        $("p").not(".intro").css("background-color","yellow");
+    });
+</script>
+<h1>Wellcome to My Homepage</h1>
+
+<p>my name is donald </p>
+<p class="intro">donald duck</p>
+<p class="intro">i live in duckburg</p>
+<p>my best friend is mickey</p>
+
+
+
+
+</body>
+
+</html>
